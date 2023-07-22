@@ -1,0 +1,36 @@
+import React from 'react';
+import { render, screen, fireEvent } from '@testing-library/react';
+import {{componentName}} from './index';
+
+describe('{{componentName}}', () => {
+  test('renders {{componentName}}', () => {
+    render(<{{componentName}}>click me</{{componentName}}>);
+    const linkElement = screen.getByText(/click me/i);
+    expect(linkElement).toBeInTheDocument();
+  });
+  
+/**
+  test('renders normal {{componentName}}', () => {
+    const { container } = render(<{{componentName}}>click me</{{componentName}}>);
+  
+    expect(container.querySelector('.ant-btn-normal')).toBeInTheDocument();
+  });
+
+  test('renders small {{componentName}}', () => {
+    const { container } = render(<{{componentName}} size="small">click me</{{componentName}}>);
+  
+    expect(container.querySelector('.ant-btn-small')).toBeInTheDocument();
+  });
+
+  test('should support click', () => {
+    const onClick = jest.fn();
+    render(<{{componentName}} type="primary" onClick={onClick}>click me</{{componentName}}>);
+
+    const linkElement = screen.getByText(/click me/i);
+    fireEvent.click(linkElement);
+
+    expect(onClick).toBeCalled();
+  });
+  **/
+});
+
